@@ -8,7 +8,7 @@ public class TimeScaler : MonoBehaviour
 {
     public float minTimeScale = 0.01f;
     public float maxTimeScale = 1f;
-    public float TimeScalingModifier = 0.5f;
+    public float TimeScalingModifier = 0.125f;
     public int timeScaleDecimalStep = 4;
 
     private float HeadVelocity;
@@ -31,11 +31,11 @@ public class TimeScaler : MonoBehaviour
             }
             else if (nodeState.nodeType == leftHandNode)
             {
-                LeftHandVelocity = getVelocity(nodeState);
+                LeftHandVelocity = getVelocity(nodeState) * 0.5f;
             }
             else if (nodeState.nodeType == rightHandNode)
             {
-                RightHandVelocity = getVelocity(nodeState);
+                RightHandVelocity = getVelocity(nodeState) * 0.5f;
             }
         }
     }
