@@ -8,7 +8,7 @@ public class LazerShot : MonoBehaviour
     [SerializeField]
     public GameObject LaserBulletTemplate;
     
-    public float shootPower = 100f;
+    public float shootPower = 100000f;
     public InputActionReference trigger;
     
     

@@ -29,7 +29,11 @@ public class RaycastTeleport : MonoBehaviour
             Debug.Log(hit.collider.gameObject.name);
         
             // Don't forget to attach the player origin in the editor!
-            playerOrigin.transform.position = hit.collider.gameObject.transform.position;
+            // Moves to center of object hit
+            //playerOrigin.transform.position = hit.collider.gameObject.transform.position;
+            
+            //moves to the point where the raycast hit
+            playerOrigin.transform.position = hit.point;
         }
     }
 }
