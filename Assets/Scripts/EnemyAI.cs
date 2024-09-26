@@ -63,6 +63,7 @@ public class EnemyAI : MonoBehaviour
                 }
             }
         }
+        
     }
 
     private void OnTriggerEnter(Collider other)
