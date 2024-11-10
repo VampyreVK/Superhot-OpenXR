@@ -4458,7 +4458,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 568488126677839542, guid: ddc1a4a8ddda545228621775c6166d8a, type: 3}
       propertyPath: m_Name
-      value: Enemy (1)
+      value: EnemyBump
       objectReference: {fileID: 0}
     - target: {fileID: 2019715604531529046, guid: ddc1a4a8ddda545228621775c6166d8a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4522,16 +4522,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1271853675}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de64caad5813044e1b2065f84f7257d6, type: 3}
+  m_Script: {fileID: 11500000, guid: 5bb4252ba96d34b3da9cc098e7749aa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  stopDistance: 2
-  shootPower: 50000
-  shootDistance: 0
-  AttackInterval: 2
-  EnemyBulletTemplate: {fileID: 14984476728443639, guid: b636b9353700146d1933024b74cb37ba, type: 3}
-  RotationSpeed: 100
+  speed: 5
 --- !u!1001 &1286882053
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6532,6 +6526,7 @@ MonoBehaviour:
   LaserBulletTemplate: {fileID: 14984476728443639, guid: e74c5f67da4dc47108f54ff034affca2, type: 3}
   shootPower: 100000
   trigger: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  spellCast: {fileID: 0}
 --- !u!1 &1902653082 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 565198948013828284, guid: 07cad510a341649edb08ecb202c4201f, type: 3}
