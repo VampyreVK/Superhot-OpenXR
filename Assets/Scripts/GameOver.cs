@@ -14,5 +14,14 @@ public class GameOver : MonoBehaviour
             SceneManager.LoadScene(currentSceneName);
             Debug.Log("Game Over");
         }
+
+        if (other.gameObject.tag == "EnemyHitbox")
+        {
+            string currentSceneName = SceneManager.GetActiveScene().name;
+            SceneManager.LoadScene(currentSceneName);
+            Debug.Log("Game Over");
+        }
+
+
     }
 }

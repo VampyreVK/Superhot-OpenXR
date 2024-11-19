@@ -6,6 +6,7 @@ TagManager:
   tags:
   - EnemyHitbox
   - EnemyBullet
+  - FriendlyBullet
   layers:
   - Default
   - TransparentFX

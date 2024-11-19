@@ -10,7 +10,7 @@ public class LazerShot : MonoBehaviour
     
     public float shootPower = 100000f;
     public InputActionReference trigger;
-    public AudioClip spellCast;
+    public AudioClip SpellCast;
     
     
     //Deals with the shooting of the laser
@@ -20,7 +20,7 @@ public class LazerShot : MonoBehaviour
         GameObject newBullet = Instantiate(LaserBulletTemplate, transform.position, transform.rotation);
         newBullet.GetComponent<Rigidbody>().AddForce(transform.forward * shootPower);
 
-        GetComponent<AudioSource>().PlayOneShot(spellCast);
+        GetComponent<AudioSource>().PlayOneShot(SpellCast);
     }
     
     
