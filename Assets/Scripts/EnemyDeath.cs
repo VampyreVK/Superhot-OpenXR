@@ -10,9 +10,10 @@ public class EnemyDeath : MonoBehaviour
     {
         if (other.gameObject.tag == "FriendlyBullet")
         {
+            Debug.Log("Enemy Defeated");
+            EnemyManager.OnEnemyDestroyed();
             Destroy(gameObject.transform.parent.gameObject);
             Destroy(other.gameObject);
-            Debug.Log("Game Over");
         }
     }
 }

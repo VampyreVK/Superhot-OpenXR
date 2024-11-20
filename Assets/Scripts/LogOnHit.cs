@@ -6,6 +6,6 @@ public class LogOnHit : MonoBehaviour
 {
     public void OnCollisionEnter(Collision other)
     {
-        Debug.Log(gameObject.name +" Collision Detected with " + other.gameObject.name);
+        //Debug.Log(gameObject.name +" Collision Detected with " + other.gameObject.name);
     }
 }
